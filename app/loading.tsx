@@ -1,0 +1,1 @@
+export default function Loading(){return <main className="shell center"><div className="pulseMark">tind<span className="ai">AI</span></div><p className="eyebrow">READING THE SIGNAL…</p></main>}
