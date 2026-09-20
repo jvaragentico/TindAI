@@ -18,6 +18,16 @@ The goal of TindAI is not to teach people to fear AI. It is to encourage curiosi
 
 TindAI turns that lesson into a short social game instead of a lecture.
 
+## 📱 Demo preview
+
+The live demo is designed as a short mobile journey:
+
+| 1 · Discover | 2 · Match | 3 · Chat | 4 · Reveal |
+|---|---|---|---|
+| Browse fictional demo profiles and choose who you want to meet. | A like opens the challenge and starts the experiment. | Talk naturally for the accelerated one-minute showcase. | Decide **HUMAN or AI** and immediately discover the answer. |
+
+**Try the interactive version:** https://tindai-demo.vercel.app/
+
 ## 🎮 The experiment
 
 ```text
