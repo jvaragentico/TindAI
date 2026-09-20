@@ -24,7 +24,7 @@ export default function ChatRoom({conversation,target,myProfileId,initial,justMa
   const router=useRouter();
   const [messages,setMessages]=useState<M[]>(initial);
   const [body,setBody]=useState("");
-  const [left,setLeft]=useState(60);
+  const [left,setLeft]=useState(30);
   const [sending,setSending]=useState(false);
   const [showMatch,setShowMatch]=useState(justMatched);
   const [replyIndex,setReplyIndex]=useState(0);
