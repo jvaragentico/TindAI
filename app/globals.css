@@ -42,3 +42,11 @@
 
 /* TindAI loading: love × human/AI × technology */
 .loadingLoveTech{text-align:center;display:grid;place-items:center;gap:16px;animation:pulse 1.4s infinite alternate}.loadingWord{font-size:12px;font-weight:900;letter-spacing:.28em;color:#aaa7b4}.loadingBridge{display:flex;align-items:center;gap:14px;font-size:22px}.loadingBridge strong{font-size:15px;letter-spacing:.14em;background:linear-gradient(90deg,var(--hot),var(--violet),var(--cyan));background-clip:text;-webkit-background-clip:text;color:transparent}.loadingBridge span:first-child{color:#ff4d91}.loadingBridge span:last-child{color:#22d3ee}.loadingBrand{font-size:52px;font-weight:950;letter-spacing:-3px;margin-top:12px}.loadingLine{font-size:13px;color:#a7a3af;margin:6px 0 0}
+
+/* safe local demo chat */
+.quickQuestions{display:flex;flex-wrap:wrap;gap:7px;padding:8px 14px 10px;border-top:1px solid #25232d;background:#0d0c12}
+.quickQuestion{appearance:none;border:1px solid #3b3746;border-radius:999px;background:#17151e;color:#eee9f4;padding:9px 12px;font:700 12px/1.2 inherit;cursor:pointer;user-select:none;-webkit-tap-highlight-color:transparent}
+.quickQuestion:active{transform:scale(.98);border-color:#ff4d91}
+.quickQuestion[aria-disabled="true"]{opacity:.45;pointer-events:none}
+.demoGuessButtons{display:grid;grid-template-columns:1fr 1fr;gap:10px}.demoGuessButtons button,.demoResult button{min-height:50px;border:0;border-radius:15px;background:linear-gradient(90deg,#c72f6c,#7350d8);color:#fff;font-weight:900}
+.demoResult{display:grid;gap:14px;text-align:center}
