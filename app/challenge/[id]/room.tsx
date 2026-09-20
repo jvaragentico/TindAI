@@ -24,7 +24,7 @@ export default function ChatRoom({conversation,target,myProfileId,initial,justMa
   const router=useRouter();
   const [messages,setMessages]=useState<M[]>(initial);
   const [body,setBody]=useState("");
-  const [left,setLeft]=useState(300);
+  const [left,setLeft]=useState(60);
   const [sending,setSending]=useState(false);
   const [showMatch,setShowMatch]=useState(justMatched);
   const [replyIndex,setReplyIndex]=useState(0);
@@ -55,8 +55,8 @@ export default function ChatRoom({conversation,target,myProfileId,initial,justMa
   if(demoGuess)return <main className="challengeShell"><section className="guessGate demoResult"><p className="eyebrow">DEMO REVEAL</p><h1>{demoGuess==="ai"?"🤖 Nice guess!":"💞 Bold choice!"}</h1><p>This demo chat is simulated — no server request, redirect or AI API is used.</p><button type="button" onClick={()=>router.replace("/discover")}>Back to discovery</button></section></main>;
 
   return <main className="challengeShell">
-    {showMatch&&<div className="matchModal"><div className="matchBox"><div className="matchEmoji">❤️</div><h1>It’s a Match!</h1><p>But is {target.display_name} real or AI?</p><strong>You have 5 minutes to find out.</strong><button type="button" onClick={()=>setShowMatch(false)}>Start chatting</button></div></div>}
-    <header className="challengeHead"><div><p className="eyebrow">5-MINUTE CHALLENGE</p><h2>{target.display_name}, {target.age}</h2></div><div className="challengeTools"><div className={left<30?"timer danger":"timer"}>{mm}:{ss}</div><button type="button" className="closeChallenge" onClick={()=>router.replace("/discover")} aria-label="Close challenge">×</button></div></header>
+    {showMatch&&<div className="matchModal"><div className="matchBox"><div className="matchEmoji">❤️</div><h1>It’s a Match!</h1><p>But is {target.display_name} real or AI?</p><strong>You have 1 minute to find out.</strong><button type="button" onClick={()=>setShowMatch(false)}>Start chatting</button></div></div>}
+    <header className="challengeHead"><div><p className="eyebrow">1-MINUTE CHALLENGE</p><h2>{target.display_name}, {target.age}</h2></div><div className="challengeTools"><div className={left<30?"timer danger":"timer"}>{mm}:{ss}</div><button type="button" className="closeChallenge" onClick={()=>router.replace("/discover")} aria-label="Close challenge">×</button></div></header>
     <div className="ruleStrip">GAME RULES · Don’t ask directly “Are you AI or human?” · No outside contact · Trust your instincts.</div>
     <section className="chatStream">
       {messages.length===0&&<div className="chatIntro">The clock is running. Pick a question or improvise. Try not to fall in love with the algorithm. 😉</div>}
