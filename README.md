@@ -1,12 +1,16 @@
 # 💗 TindAI
 
-### Human or AI? You have five minutes to find out.
+### Love meets technology. Human meets AI. Can you tell the difference?
 
 **TindAI is a small, mobile-first AI-literacy experiment.** It borrows the familiar rhythm of swipe → match → chat, then turns it into a question that matters increasingly online:
 
 > **Can you tell when you are interacting with a human and when you are interacting with AI?**
 
-🌐 **Live demo:** https://tindai-demo.vercel.app/
+🌐 **Live demo:** https://tindai-demo.vercel.app
+
+**New identity:** ❤️ **LOVE** → **HUMAN × AI** → ✦ **TECHNOLOGY**
+
+**TindAI** is playful by design: meet, talk, guess, reveal, learn — and discover who fooled whom.
 
 ---
 
@@ -26,7 +30,7 @@ The live demo is designed as a short mobile journey:
 |---|---|---|---|
 | Browse fictional demo profiles and choose who you want to meet. | A like opens the challenge and starts the experiment. | Talk naturally for the accelerated one-minute showcase. | Decide **HUMAN or AI** and immediately discover the answer. |
 
-**Try the interactive version:** https://tindai-demo.vercel.app/
+**Try the interactive version:** https://tindai-demo.vercel.app
 
 ## 🎮 The experiment
 
@@ -62,7 +66,7 @@ The interface says **five-minute challenge** because that is the intended experi
 
 TindAI is a **proof of concept / portfolio experiment**, not a production dating service.
 
-The initial pool contains fictional synthetic participants and simulated-human profiles so the complete experience can be tested before a real community exists. Users are informed that synthetic participants are part of the experiment; identity is hidden only for the duration of the game and revealed afterward.
+The demo pool contains **30 fictional profiles: 20 women and 10 men**, split between synthetic AI participants and simulated-human profiles, so the complete experience can be tested before a real community exists. Users are informed that synthetic participants are part of the experiment; identity is hidden only for the duration of the game and revealed afterward.
 
 The project intentionally does **not** present fictional AI identities as real people outside this disclosed experiment.
 
@@ -148,7 +152,9 @@ TindAI was created as an exploration of **human–AI interaction, agentic system
 
 ---
 
-### 💗 TindAI
+### ❤️ TindAI
+**LOVE × HUMAN × AI × TECHNOLOGY**
+
 **Meet. Talk. Guess. Reveal. Learn.**
 
 *Demo / experimental project — not a commercial dating service.*
