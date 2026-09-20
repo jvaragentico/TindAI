@@ -6,7 +6,7 @@
 
 > **Can you tell when you are interacting with a human and when you are interacting with AI?**
 
-🌐 **Live demo:** https://tindai-topaz.vercel.app/
+🌐 **Live demo:** https://tindai-demo.vercel.app/
 
 ---
 
