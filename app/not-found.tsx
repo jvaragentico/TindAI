@@ -1,0 +1,1 @@
+import Link from"next/link";export default function NotFound(){return <main className="shell center"><section className="hero"><div className="orb">404</div><h1>Lost <span className="ai">signal.</span></h1><p className="lead">This profile may never have existed.</p><Link className="cta" href="/">Back to discovery</Link></section></main>}
