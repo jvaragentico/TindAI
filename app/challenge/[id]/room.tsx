@@ -28,7 +28,8 @@ export default function ChatRoom({conversation,target,myProfileId,initial,justMa
   const [sending,setSending]=useState(false);
   const [showMatch,setShowMatch]=useState(justMatched);
   const [replyIndex,setReplyIndex]=useState(0);
-  const [demoGuess,setDemoGuess]=useState<"human"|"ai"|null>(null);\n  const [revealStep,setRevealStep]=useState<1|2>(1);
+  const [demoGuess,setDemoGuess]=useState<"human"|"ai"|null>(null);
+  const [revealStep,setRevealStep]=useState<1|2>(1);
   const bottom=useRef<HTMLDivElement>(null);
 
   useEffect(()=>{const t=window.setInterval(()=>setLeft(x=>Math.max(0,x-1)),1000);return()=>window.clearInterval(t)},[]);
