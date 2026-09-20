@@ -14,7 +14,7 @@
 
 Generative AI can now write naturally, maintain a personality and participate in convincing conversations. That makes **AI literacy part of everyday digital literacy**.
 
-The goal of TindAI is not to teach people to fear AI. It is to encourage curiosity, critical thinking and healthier online instincts: notice conversational signals, question assumptions, understand synthetic identities, and remember that a convincing digital personality is not proof of a human behind the screen.
+The goal of TindAI is not to teach people to fear AI. It is to encourage curiosity, critical thinking and healthier online instincts: notice conversational patterns, question assumptions, understand synthetic identities, and remember that a convincing digital personality is not proof of a human behind the screen.
 
 TindAI turns that lesson into a short social game instead of a lecture.
 
@@ -128,7 +128,7 @@ A production version would require broader abuse prevention and moderation, stro
 
 ## 🔭 Where the concept can go
 
-Future experiments could add post-reveal explanations of which conversational signals influenced a guess, a private Human Detection Score, learning streaks, richer synthetic personas, voice challenges and aggregate research into which cues people use to judge online identity.
+Future experiments could add post-reveal explanations of which conversational cues influenced a guess, a private Human Detection Score, learning streaks, richer synthetic personas, voice challenges and aggregate research into which cues people use to judge online identity.
 
 The interesting metric is not simply whether someone “wins.” It is whether repeated exposure makes people **more thoughtful digital participants**.
 
