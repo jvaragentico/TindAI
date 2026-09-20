@@ -36,3 +36,6 @@
 .logoutBtn{width:100%;min-height:50px;margin:28px 0 12px;border:1px solid #ff4d9155;border-radius:15px;background:#ff4d9110;color:#ff86b1;font-weight:800}
 
 .matchPhoto{width:64px;height:78px;border-radius:16px;object-fit:cover;display:block}.challengeSoon{border:0;background:transparent;padding:0;cursor:pointer}.revealCentered h1{font-size:34px;line-height:1.08;margin:14px 0}.revealCentered .revealIcon{font-size:42px;background:radial-gradient(circle,#2b1730,#151119);box-shadow:0 0 45px #ff3d8130}
+
+/* form contrast fix */
+.authBox input,.authBox textarea,.authBox select,.profileEditForm input,.profileEditForm textarea,.profileEditForm select{color:#fff!important;-webkit-text-fill-color:#fff!important;caret-color:#fff!important}.authBox input::placeholder,.authBox textarea::placeholder,.profileEditForm input::placeholder,.profileEditForm textarea::placeholder{color:#9d99a8!important;-webkit-text-fill-color:#9d99a8!important;opacity:1}.authBox select option,.profileEditForm select option{background:#121219;color:#fff}.closeChallenge{font-family:inherit;cursor:pointer;padding:0}
