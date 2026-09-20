@@ -16,7 +16,7 @@ export async function signup(formData:FormData){
   const email=String(formData.get("email")||"").trim().toLowerCase();
   const password=String(formData.get("password")||"");
   if(formData.get("age")!=="on")redirect("/auth/signup?error="+encodeURIComponent("You must confirm that you are 18 or older."));
-  const{error}=await s.auth.signUp({email,password});
+  const{error}=await s.auth.signUp({email,password,options:{emailRedirectTo:"https://tindai-demo.vercel.app/auth/callback"}});
   if(error)redirect("/auth/signup?error="+encodeURIComponent(error.message));
   const{error:confirmError}=await s.rpc("confirm_demo_signup",{p_email:email});
   if(confirmError)redirect("/auth/signup?error="+encodeURIComponent("Could not activate the account. Please try again."));
