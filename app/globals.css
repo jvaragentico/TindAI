@@ -50,3 +50,7 @@
 .quickQuestion[aria-disabled="true"]{opacity:.45;pointer-events:none}
 .demoGuessButtons{display:grid;grid-template-columns:1fr 1fr;gap:10px}.demoGuessButtons button,.demoResult button{min-height:50px;border:0;border-radius:15px;background:linear-gradient(90deg,#c72f6c,#7350d8);color:#fff;font-weight:900}
 .demoResult{display:grid;gap:14px;text-align:center}
+
+/* auth visibility + Android/Chrome autofill */
+.authBox input[type="email"],.authBox input[type="password"]{background:#111117!important;color:#fff!important;-webkit-text-fill-color:#fff!important;font-size:16px!important}
+.authBox input:-webkit-autofill,.authBox input:-webkit-autofill:hover,.authBox input:-webkit-autofill:focus{-webkit-text-fill-color:#fff!important;-webkit-box-shadow:0 0 0 1000px #111117 inset!important;box-shadow:0 0 0 1000px #111117 inset!important;caret-color:#fff!important;transition:background-color 9999s ease-out 0s}
