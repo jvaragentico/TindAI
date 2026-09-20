@@ -1,1 +1,29 @@
-"use server";import{redirect}from"next/navigation";import{createClient}from"@/lib/supabase/server";export async function login(formData:FormData){const s=await createClient();const email=String(formData.get("email")||"");const password=String(formData.get("password")||"");const{error}=await s.auth.signInWithPassword({email,password});if(error)redirect("/auth/login?error="+encodeURIComponent(error.message));redirect("/discover")}export async function signup(formData:FormData){const s=await createClient();const email=String(formData.get("email")||"");const password=String(formData.get("password")||"");const{data,error}=await s.auth.signUp({email,password,options:{emailRedirectTo:"https://tindai-demo.vercel.app/auth/callback"}});if(error)redirect("/auth/signup?error="+encodeURIComponent(error.message));if(data.session)redirect("/profile/setup");redirect("/auth/signup?error="+encodeURIComponent("Email confirmation is still enabled in Supabase. Turn Confirm email off to use instant signup."))}export async function logout(){const s=await createClient();await s.auth.signOut();redirect("/auth/login")}export async function resetPassword(formData:FormData){const s=await createClient();const email=String(formData.get("email")||"");await s.auth.resetPasswordForEmail(email,{redirectTo:"https://tindai-demo.vercel.app/auth/update-password"});redirect("/auth/check-email")}
+"use server";
+import{redirect}from"next/navigation";
+import{createClient}from"@/lib/supabase/server";
+
+export async function login(formData:FormData){
+  const s=await createClient();
+  const email=String(formData.get("email")||"").trim().toLowerCase();
+  const password=String(formData.get("password")||"");
+  const{error}=await s.auth.signInWithPassword({email,password});
+  if(error)redirect("/auth/login?error="+encodeURIComponent("Email or password is incorrect."));
+  redirect("/discover");
+}
+
+export async function signup(formData:FormData){
+  const s=await createClient();
+  const email=String(formData.get("email")||"").trim().toLowerCase();
+  const password=String(formData.get("password")||"");
+  if(formData.get("age")!=="on")redirect("/auth/signup?error="+encodeURIComponent("You must confirm that you are 18 or older."));
+  const{error}=await s.auth.signUp({email,password});
+  if(error)redirect("/auth/signup?error="+encodeURIComponent(error.message));
+  const{error:confirmError}=await s.rpc("confirm_demo_signup",{p_email:email});
+  if(confirmError)redirect("/auth/signup?error="+encodeURIComponent("Could not activate the demo account. Please try again."));
+  const{error:loginError}=await s.auth.signInWithPassword({email,password});
+  if(loginError)redirect("/auth/signup?error="+encodeURIComponent("Account created, but automatic login failed. Please use Log in."));
+  redirect("/profile/setup");
+}
+
+export async function logout(){const s=await createClient();await s.auth.signOut();redirect("/auth/login")}
+export async function resetPassword(formData:FormData){const s=await createClient();const email=String(formData.get("email")||"");await s.auth.resetPasswordForEmail(email,{redirectTo:"https://tindai-demo.vercel.app/auth/update-password"});redirect("/auth/check-email")}
