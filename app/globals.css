@@ -11,3 +11,21 @@
 .liveInfo{padding:15px 18px!important}.liveInfo h1{font-size:29px!important;margin:3px 0}.liveInfo>p:not(.eyebrow){font-size:13px;line-height:1.35;margin:6px 0}.liveActions{margin-top:9px!important}.liveActions button{width:56px;height:56px}.discoverLive{padding-bottom:8px!important}.fine{margin-top:8px!important}.filterPanel{margin:5px 0 8px}.simpleHead{margin-bottom:9px!important}
 .chatError{margin:0 12px 8px;padding:8px 11px;border:1px solid #ff3d8144;border-radius:12px;background:#ff3d8113;color:#ff9aba;font-size:11px}.typing{opacity:.65;font-style:italic}
 @media(max-height:760px){.liveCard{height:45dvh!important;min-height:330px!important}.liveInfo h1{font-size:27px!important}.liveActions button{width:52px;height:52px}.liveActions{gap:22px}.liveActions>form:last-child{gap:22px}}
+
+/* mobile usability pass */
+.liveCard{height:min(58dvh,560px)!important;min-height:430px!important}
+.profileHero{object-position:center 28%}
+.liveCard:has(.profileHero) .liveInfo{padding:18px 20px!important}
+.liveActions{margin-top:12px!important}
+.filterPanel{padding:15px 16px!important;border-radius:20px!important}
+.filterPanel summary{font-size:15px!important;letter-spacing:.06em;padding:3px 0}
+.filterPanel form{gap:14px!important}
+.filterPanel label{font-size:14px}
+.filterPanel input[type=number],.filterPanel input[type=text]{min-height:48px;font-size:16px}
+.filterChecks{font-size:14px!important;gap:18px!important}
+.filterChecks input{width:20px;height:20px;vertical-align:middle}
+.smallCta{min-height:52px!important;border-radius:15px!important;font-size:16px!important}
+.challengeTools{display:flex;align-items:center;gap:13px}
+.closeChallenge{width:40px;height:40px;border-radius:50%;border:1px solid #3a3742;background:#17171e;color:#fff;text-decoration:none;display:grid;place-items:center;font-size:28px;line-height:1}
+.ruleStrip{font-size:13px!important;line-height:1.45!important;font-weight:700!important;color:#d2cfda!important;padding:12px 16px!important;background:#14131a}
+@media(max-height:760px){.liveCard{height:54dvh!important;min-height:390px!important}.liveInfo{padding:14px 18px!important}.liveInfo>p:not(.eyebrow){margin:4px 0!important}.liveActions{margin-top:8px!important}}
